@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+*{margin: 0; padding: 0;}
+
+// Sass: Store Data with Sass Variables
+$fontfamily : calibri;
+$h4Color : red;
+body { font-family: $fontfamily;}
+h4{color: $h4Color;}
+@mixin border-radius($radius){ 
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+// Sass: Nest CSS with Sass
+.box{
+    width: 1200px;
+    margin: 0 auto;
+    .title{
+        background-color: #eee;
+        text-align: center;
+    }
+    .syntax{
+        border-bottom: 1px dashed #ddd;
+    }
+    .output{
+        border-bottom: 1px dashed #ddd;
+    }
+.boxone{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;}
+.boxtwo{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;}
+.boxthree{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;
+    #awesome {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+     @include border-radius(15px);
+      }
+    }
+}
+
+.blog-post {
+    h1 {
+      text-align: center;
+      color: blue;
+    }
+    p {
+      font-size: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+// Sass: Store Data with Sass Variables
+$fontfamily : verdana;
+$h1Color : red;
+
+body { font-family: $fontfamily;}
+h1{color: $h1Color;}

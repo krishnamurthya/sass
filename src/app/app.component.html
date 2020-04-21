@@ -1,0 +1,38 @@
+<!-- <router-outlet></router-outlet> -->
+<h1 style="text-align: center;">SCSS</h1>
+<div class="box">
+  <div class="boxone">
+    <div class="title">Variables</div>
+    <div class="syntax"><b>Syntax</b></div>
+    <div>$h4Color : red;</div>
+    <div>h4&#123;color: $h4Color;&#125;</div>
+    <div class="output"><b>Output</b></div>
+    <h4>Store Data with Sass Variables</h4>
+  </div>
+  <div class="boxtwo">
+    <div class="title">Nest class</div>
+    <div class="syntax"><b>CSS</b></div>
+    <div>
+      .box&#123;<br>.boxone&#123;&#125;<br>&#125;
+    </div>
+    <div class="output"><b>HTML</b></div>
+    &lt;div class="box"&gt;<br>
+    &lt;div class="boxone"&gt; &lt;/div&gt;<br>
+    &lt;/div&gt;
+  </div>
+  <div class="boxthree">
+    <div class="title">Mixin</div>
+    <div class="syntax"><b>CSS</b></div>
+    <div>@mixin border-radius($radius)&#123;<br>
+      border-radius: $radius;<br>
+      &#125;<br>
+      #awesome &#123;<br>
+      @include border-radius(15px);<br>
+      &#125;
+    </div>
+    <div class="output"><b>Output</b></div>
+    &lt;div id="awesome"&gt;&lt;/div&gt;
+    <div id="awesome"></div>
+  </div>
+  <div class="clear"></div>
+</div>
