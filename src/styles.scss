@@ -3,47 +3,106 @@
 
 // Sass: Store Data with Sass Variables
 $fontfamily : calibri;
+// box one
 $h4Color : red;
+
+// box two
+//.box{
+//  .title{
+//  }
+//}
+
+// box three
+@mixin border-radius($radius){ 
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// box four
+@mixin border-stroke($val) {
+  @if $val == light {
+    border: 1px solid black;
+  }
+  @else if $val == medium {
+    border: 3px solid black;
+  }
+  @else if $val == heavy {
+    border: 6px solid black;
+  }
+  @else {
+    border: none;
+  }
+}
+
+// box five
+$colors: (color1: blue, color2: black, color3: red);
+
+// box six
+$x: 1;
+
+
 body { font-family: $fontfamily;}
 h4{color: $h4Color;}
-@mixin border-radius($radius){ 
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-  }
+
+
 // Sass: Nest CSS with Sass
 .box{
-    width: 1200px;
-    margin: 0 auto;
-    .title{
-        background-color: #eee;
-        text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  .title{
+    background-color: #eee;
+    text-align: center;
+  }
+  .syntax{
+    border-bottom: 1px dashed #ddd;
+  }
+  .output{
+    border-bottom: 1px dashed #ddd;
+  }
+  .boxone{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;}
+  .boxtwo{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;}
+  .boxthree{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;
+   #awesome {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    @include border-radius(15px);
+   }
+  }
+  .boxfour{border: 1px solid #ccc; width: 22%; float: left; padding: 1%;
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      @include border-stroke(medium);
     }
-    .syntax{
-        border-bottom: 1px dashed #ddd;
+  }
+  .boxfive{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;
+    @each $key, $color in $colors {
+      .#{$color}-bg {
+        background-color: $color;
+        height: 50px;
+        width: 50px;}
     }
-    .output{
-        border-bottom: 1px dashed #ddd;
+  }
+  .boxsix{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;
+    @while $x <= 5 {
+      .text-#{$x} { font-size: 15px * $x;}
+      $x: $x + 1;
     }
-.boxone{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;}
-.boxtwo{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;}
-.boxthree{border: 1px solid #ccc; width: 22%; float: left; margin-right: 1%; padding: 1%;
-    #awesome {
-        width: 100px;
-        height: 100px;
-        background-color: green;
-     @include border-radius(15px);
-      }
-    }
+  }
 }
 
 .blog-post {
-    h1 {
-      text-align: center;
-      color: blue;
-    }
-    p {
-      font-size: 20px;
-    }
+  h1 {
+    text-align: center;
+    color: blue;
+  }
+  p {
+    font-size: 20px;
+  }
 }
+
+

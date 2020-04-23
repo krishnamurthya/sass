@@ -34,5 +34,77 @@
     &lt;div id="awesome"&gt;&lt;/div&gt;
     <div id="awesome"></div>
   </div>
+  <div class="boxfour">
+    <div class="title">Style with @if and @else</div>
+    <div class="syntax"><b>CSS</b></div>
+    <div>
+      @mixin border-stroke($val) &#123;<br>
+      @if $val == light &#123;
+      border: 1px solid black;
+      &#125;<br>
+      @else if $val == medium &#123;
+      border: 3px solid black;
+      &#125;<br>
+      @else if $val == heavy &#123;
+      border: 6px solid black;
+      &#125;<br>
+      @else &#123;
+      border: none;
+      &#125;<br>
+      &#125;<br>
+      #box &#123;
+      @include border-stroke(medium);
+      &#125;
+    </div>
+    <div class="output"><b>Output</b></div>
+    &lt;div id="box"&gt;&lt;/div&gt;
+    <div id="box"></div>
+  </div>
   <div class="clear"></div>
+
+  <div class="boxfive">
+    <div class="title">Style with @each</div>
+    <div class="syntax"><b>CSS</b></div>
+    <div>
+      $colors: (color1: blue, color2: black, color3: red);<br>
+      @each $key, $color in $colors &#123;<br>
+      .#&#123;$color&#125;-bg &#123;background-color: $color;height: 200px;
+      width: 200px;&#125;
+      &#125;
+
+    </div>
+    <div class="output"><b>Output</b></div>
+    &lt;div class="blue-bg"&gt;&lt;/div&gt;<br>
+    &lt;div class="black-bg"&gt;&lt;/div&gt;<br>
+    &lt;div class="red-bg"&gt;&lt;/div&gt;
+
+    <div class="blue-bg"></div>
+    <div class="black-bg"></div>
+    <div class="red-bg"></div>
+  </div>
+
+  <div class="boxsix">
+    <div class="title">Style with @while</div>
+    <div class="syntax"><b>CSS</b></div>
+    <div>
+      $x: 1;<br>
+      @while $x <= 5 &#123;<br>
+        .text-#&#123;$x&#125; &#123; font-size: 15px * $x;&#125;<br>
+        $x: $x + 1;<br>
+        &#125;
+
+    </div>
+    <div class="output"><b>Output</b></div>
+    &lt;p class="text-1"&gt;Hello&lt;/p&gt;<br>
+    &lt;p class="text-2"&gt;Hello&lt;/p&gt;<br>
+    &lt;p class="text-3"&gt;Hello&lt;/p&gt;<br>
+    &lt;p class="text-4"&gt;Hello&lt;/p&gt;<br>
+    &lt;p class="text-5"&gt;Hello&lt;/p&gt;
+
+    <p class="text-1">Hello</p>
+    <p class="text-2">Hello</p>
+    <p class="text-3">Hello</p>
+    <p class="text-4">Hello</p>
+    <p class="text-5">Hello</p>
+  </div>
 </div>
