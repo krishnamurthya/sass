@@ -49,8 +49,6 @@ h4{color: $h4Color;}
 
 // Sass: Nest CSS with Sass
 .box{
-  width: 1200px;
-  margin: 0 auto;
   .title{
     background-color: #eee;
     text-align: center;
