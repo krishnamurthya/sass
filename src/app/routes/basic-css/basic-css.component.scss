@@ -1,4 +1,10 @@
-.body { background-color: #c6faf1; font-family: monospace; color: green; }
+:host{
+
+	--penguin-skin: black;
+	--penguin-belly: pink;
+  --penguin-beak: yellow;
+  
+  .body { background-color: #c6faf1; font-family: monospace; color: green; }
 
 h2 { font-family: Lobster, monospace; }
 
@@ -39,9 +45,8 @@ h2 { font-family: Lobster, monospace; }
   color: blue;
 }
 .penguin {
-	--penguin-skin: black;
-	--penguin-belly: gray;
-	--penguin-beak: yellow;
+	--penguin-belly: white;
+  
 	position: relative;
 	margin: auto;
 	display: block;
@@ -195,3 +200,4 @@ h2 { font-family: Lobster, monospace; }
     height: 200px;
     width:200px;
   }
+}
