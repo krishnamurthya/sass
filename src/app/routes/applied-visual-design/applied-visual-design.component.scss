@@ -34,7 +34,12 @@
 // h5{font-size: 21px; font-weight:300;}
 // h6{font-size: 14px; font-weight:200;}
 
-p {
-    font-size: 16px;
-    line-height:25px;
-  }
+// p {
+//     font-size: 16px;
+//     line-height:25px;
+//   }
+a {
+    color: #000;
+  &:hover {
+    color: blue;
+}}
