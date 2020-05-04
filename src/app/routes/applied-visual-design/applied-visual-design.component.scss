@@ -56,25 +56,38 @@
 // section {
 //   position: relative;
 // }
-body {
-    min-height: 150vh;
+// body {
+//     min-height: 150vh;
+//   }
+//   h1{margin-top: 50px;}
+//   #navbar {
+//     position:fixed;
+//     top:0;
+//     left:200px;
+//     width: 100%;
+//     background-color: #767676;
+//   }
+//   nav ul {
+//     margin: 0px;
+//     padding: 5px 0px 5px 30px;
+//   }
+//   nav li {
+//     display: inline;
+//     margin-right: 20px;
+//   }
+//   a {
+//     text-decoration: none;
+//   }
+
+#left {
+    float :left;
+    width: 50%;
   }
-  h1{margin-top: 50px;}
-  #navbar {
-    position:fixed;
-    top:0;
-    left:200px;
-    width: 100%;
-    background-color: #767676;
+  #right {
+    float :right;
+    width: 40%;
   }
-  nav ul {
-    margin: 0px;
-    padding: 5px 0px 5px 30px;
-  }
-  nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-  a {
-    text-decoration: none;
+  aside, section {
+    padding: 2px;
+    background-color: #ccc;
   }
