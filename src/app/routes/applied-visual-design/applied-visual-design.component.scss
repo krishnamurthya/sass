@@ -43,8 +43,16 @@
 //   &:hover {
 //     color: blue;
 // }}
-h2 {
-    position: relative;
-    left:15px;
-    bottom:10px;
+// h2 {
+//     position: relative;
+//     left:15px;
+//     bottom:10px;
+// }
+#searchbar {
+    position:absolute;
+    top:50px;
+    right:50px;
+}
+section {
+  position: relative;
 }
