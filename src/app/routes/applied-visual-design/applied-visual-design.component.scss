@@ -38,8 +38,12 @@
 //     font-size: 16px;
 //     line-height:25px;
 //   }
-a {
-    color: #000;
-  &:hover {
-    color: blue;
-}}
+// a {
+//     color: #000;
+//   &:hover {
+//     color: blue;
+// }}
+h2 {
+    position: relative;
+    top: 15px;
+}
