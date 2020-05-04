@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SassComponent } from './sass/sass.component';
 import { routes } from './routes';
 import { BasicCssComponent } from './basic-css/basic-css.component';
+import { AppliedVisualDesignComponent } from './applied-visual-design/applied-visual-design.component';
 
 @NgModule({
     imports: [
@@ -10,7 +11,8 @@ import { BasicCssComponent } from './basic-css/basic-css.component';
     ],
     declarations: [
         SassComponent,
-        BasicCssComponent
+        BasicCssComponent,
+        AppliedVisualDesignComponent
     ],
     exports: [
         RouterModule,
