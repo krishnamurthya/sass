@@ -79,15 +79,33 @@
 //     text-decoration: none;
 //   }
 
-#left {
-    float :left;
-    width: 50%;
+// #left {
+//     float :left;
+//     width: 50%;
+//   }
+//   #right {
+//     float :right;
+//     width: 40%;
+//   }
+//   aside, section {
+//     padding: 2px;
+//     background-color: #ccc;
+//   }
+div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
   }
-  #right {
-    float :right;
-    width: 40%;
+
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index:2;
   }
-  aside, section {
-    padding: 2px;
-    background-color: #ccc;
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    z-index: 1;
   }
