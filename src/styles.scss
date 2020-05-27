@@ -43,7 +43,9 @@ $colors: (color1: blue, color2: black, color3: red);
 $x: 1;
 
 
-body { font-family: $fontfamily;}
+body { font-family: $fontfamily;
+  background:url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+    }
 h4{color: $h4Color;}
 
 
