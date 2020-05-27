@@ -111,14 +111,19 @@
   //   z-index: 1;
   // }
 
-  .blue {
-    background-color: blue;
-  }
-  .yellow {
-    background-color: yellow;
-  }
-  div {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-  }
+  // .blue {
+  //   background-color: blue;
+  // }
+  // .yellow {
+  //   background-color: yellow;
+  // }
+  // div {
+  //   display: inline-block;
+  //   height: 100px;
+  //   width: 100px;
+  // }
+  div { height: 100px; width: 100px; margin-bottom: 5px; }
+
+  .orange { background-color: #FF7F00; }
+  .cyan { background-color: #00FFFF; }
+  .raspberry { background-color: #FF007F; }
