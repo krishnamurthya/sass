@@ -91,12 +91,12 @@
 //     padding: 2px;
 //     background-color: #ccc;
 //   }
-div {
-  background-color: blue;
-  height: 100px;
-  width: 100px;
-margin: auto;
-  }
+// div {
+//   background-color: blue;
+//   height: 100px;
+//   width: 100px;
+// margin: auto;
+//   }
 
   // .first {
   //   background-color: red;
@@ -110,3 +110,15 @@ margin: auto;
   //   top: 50px;
   //   z-index: 1;
   // }
+
+  .blue {
+    background-color: blue;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
