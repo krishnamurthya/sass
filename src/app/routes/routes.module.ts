@@ -4,6 +4,7 @@ import { SassComponent } from './sass/sass.component';
 import { routes } from './routes';
 import { BasicCssComponent } from './basic-css/basic-css.component';
 import { AppliedVisualDesignComponent } from './applied-visual-design/applied-visual-design.component';
+import { AppliedAccessibilityComponent } from './applied-accessibility/applied-accessibility.component';
 
 @NgModule({
     imports: [
@@ -12,7 +13,8 @@ import { AppliedVisualDesignComponent } from './applied-visual-design/applied-vi
     declarations: [
         SassComponent,
         BasicCssComponent,
-        AppliedVisualDesignComponent
+        AppliedVisualDesignComponent,
+        AppliedAccessibilityComponent
     ],
     exports: [
         RouterModule,
