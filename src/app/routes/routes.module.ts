@@ -5,6 +5,7 @@ import { routes } from './routes';
 import { BasicCssComponent } from './basic-css/basic-css.component';
 import { AppliedVisualDesignComponent } from './applied-visual-design/applied-visual-design.component';
 import { AppliedAccessibilityComponent } from './applied-accessibility/applied-accessibility.component';
+import { ResponsiveWebDesignPrinciplesComponent } from './responsive-web-design-principles/responsive-web-design-principles.component';
 
 @NgModule({
     imports: [
@@ -14,7 +15,8 @@ import { AppliedAccessibilityComponent } from './applied-accessibility/applied-a
         SassComponent,
         BasicCssComponent,
         AppliedVisualDesignComponent,
-        AppliedAccessibilityComponent
+        AppliedAccessibilityComponent,
+        ResponsiveWebDesignPrinciplesComponent
     ],
     exports: [
         RouterModule,
