@@ -4,6 +4,7 @@ import { BasicCssComponent } from './basic-css/basic-css.component';
 import { AppliedVisualDesignComponent } from './applied-visual-design/applied-visual-design.component';
 import { AppliedAccessibilityComponent } from './applied-accessibility/applied-accessibility.component';
 import { ResponsiveWebDesignPrinciplesComponent } from './responsive-web-design-principles/responsive-web-design-principles.component';
+import { CssFlexboxComponent } from './css-flexbox/css-flexbox.component';
 
 export const routes = [
     { path: 'sass', component: SassComponent },
@@ -11,6 +12,7 @@ export const routes = [
     { path: 'appliedvisualdesign', component: AppliedVisualDesignComponent },
     { path: 'appliedaccessibility', component: AppliedAccessibilityComponent },
     { path: 'responsivewebdesignprinciples', component: ResponsiveWebDesignPrinciplesComponent },
+    { path: 'cssflexbox', component: CssFlexboxComponent },
     // Not found
     { path: '**', redirectTo: 'sass' }
 ];
