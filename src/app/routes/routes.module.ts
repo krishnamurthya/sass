@@ -7,6 +7,7 @@ import { AppliedVisualDesignComponent } from './applied-visual-design/applied-vi
 import { AppliedAccessibilityComponent } from './applied-accessibility/applied-accessibility.component';
 import { ResponsiveWebDesignPrinciplesComponent } from './responsive-web-design-principles/responsive-web-design-principles.component';
 import { CssFlexboxComponent } from './css-flexbox/css-flexbox.component';
+import { CssGridComponent } from './css-grid/css-grid.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { CssFlexboxComponent } from './css-flexbox/css-flexbox.component';
         AppliedVisualDesignComponent,
         AppliedAccessibilityComponent,
         ResponsiveWebDesignPrinciplesComponent,
-        CssFlexboxComponent
+        CssFlexboxComponent,
+        CssGridComponent
     ],
     exports: [
         RouterModule,
