@@ -1,14 +1,10 @@
 .item1{background:LightSkyBlue;}
-  .item2{background:LightSalmon;}
+  .item2{background:LightSalmon;
+    justify-self:center;
+}
   .item3{background:PaleTurquoise;}
   .item4{background:LightPink;}
-
-  .item5 {
-    background: PaleGreen;
-grid-column:2 / 4;
-grid-row:2 /4;
-
-  }
+  .item5 {background: PaleGreen;}
 
   .container {
     font-size: 40px;
