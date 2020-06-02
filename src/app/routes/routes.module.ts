@@ -8,6 +8,7 @@ import { AppliedAccessibilityComponent } from './applied-accessibility/applied-a
 import { ResponsiveWebDesignPrinciplesComponent } from './responsive-web-design-principles/responsive-web-design-principles.component';
 import { CssFlexboxComponent } from './css-flexbox/css-flexbox.component';
 import { CssGridComponent } from './css-grid/css-grid.component';
+import { BasicJavascriptComponent } from './basic-javascript/basic-javascript.component';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { CssGridComponent } from './css-grid/css-grid.component';
         AppliedAccessibilityComponent,
         ResponsiveWebDesignPrinciplesComponent,
         CssFlexboxComponent,
-        CssGridComponent
+        CssGridComponent,
+        BasicJavascriptComponent
     ],
     exports: [
         RouterModule,
